@@ -1,9 +1,225 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Xin chào các bạn</title>
-  </head>
-  <body>
-    <h1>hello các bạn <a href="google.com.vn" rel="nofollow" target="_blank">Dương </a></h1.
-      </body>
-      </html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho ứng dụng IOS - Android</title>
+    <script>
+        function changeTitle(title) {
+            document.title = title;
+        }
+    </script>
+    <style>
+        body 
+        {
+            background-color: #f7f9fc;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h 
+        {
+            font-size: 18px;
+        }
+        h2 
+        {
+            color: blue; 
+            font-size: 28px;
+        }
+        h3 
+        {
+            font-size: 20px;
+        }
+        h4 
+        {
+            font-size: 18px;
+        }
+        p 
+        {
+        font-size: 18px;
+        }
+       
+        .tab 
+        {
+            overflow: hidden;
+        }
+
+            .tab button {
+                font-size: 18px;
+                font-family: "Times New Roman", Times, serif;
+                background-color: #f2f2f2;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 10px 20px;
+                transition: background-color 0.3s;
+            }
+
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+        .tabcontent 
+        {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+            .tabcontent button {
+                font-size: 18px;
+                font-family: "Times New Roman", Times, serif;
+                background-color: #f2f2f2;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 10px 20px;
+                transition: background-color 0.3s;
+            }
+                .tabcontent button:hover {
+                    background-color: #ddd;
+                }
+
+        
+        .tablinks.active, .subtablinks.active {
+            background-color: #048e70;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kho ứng dụng từ nhiều nguồn cập nhật liên tục</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tabIOS'); changeTitle('IOS')">IOS</button>
+        <button class="tablinks" onclick="openTab(event, 'tabAndroid'); changeTitle('Android')">Android</button>
+    </div>
+
+    <div id="tabIOS" class="tabcontent">
+        <div class="subtab">
+            <button class="subtablinks" onclick="openSubTab(event, 'subTabApp'); changeTitle('Ứng dụng IOS')">Ứng dụng</button>
+            <button class="subtablinks" onclick="openSubTab(event, 'subTabGame'); changeTitle('Game IOS')">Game</button>
+            <button class="subtablinks" onclick="openSubTab(event, 'subTabChanThuHoi'); changeTitle('Chặn thu hồi chứng chỉ')">Chặn thu hồi chứng chỉ</button>
+        </div>
+
+        <div id="subTabApp" class="subtabcontent" style="display: block;">
+            <h1></h1>
+            <a href="https://example.com">
+                <img src="https://logolook.net/wp-content/uploads/2022/11/Picsart-Logo.png" alt="Picsart" width="80" height="50">
+            </a>
+            <h>Picsart - Ứng dụng chỉnh sửa ảnh</h>
+        </div>
+
+        <div id="subTabGame" class="subtabcontent" style="display: none;">
+            <h3>Nội dung Sub Tab 2</h3>
+            <p>Đây là nội dung của sub tab 2 trong tab IOS.</p>
+        </div>
+
+        <div id="subTabChanThuHoi" class="subtabcontent" style="display: none;">
+            <h3>Hướng dẫn chặn thu hồi chứng chỉ Apple</h3>
+            <h4>Các ứng dụng cần thiết:</h4>
+            <p>- Temp Mail.<br>
+               - Document.<br>
+               - Các file Mobileconfig.
+            </p>
+            <h4>Các bước thực hiện:</h4>
+            <p>- Tải các ứng dụng Temp Mail, Document.<br>
+               - Tải về file Mobileconfig <a href="http://google.com" target="_blank">tại đây.</a><br>
+               - Tải về file rules <a href="http://google.com" target="_blank">tại đây.</a><br>
+               - Truy cập trang <a href="https://adguard-dns.io" target="_blank"> adguard-dns.io.</a> Chọn Dùng thử AdGuard DNS.<br>
+               - Mở Temp Mail lên chọn mail rồi điền vào mục email trong trang Adguard-dns, tạo mật khẩu sau đó ấn vào đăng nhập.<br>
+               - Chọn Connect to device.<br>
+               - Trong mục Device name đặt tên bât kỳ. Ví dụ: Chặn 1.<br>
+               - Ấn next.<br>
+               - Ấn Home.
+            </p>
+            <img src="Image\An vao Home.jpg" alt="Ấn vào Home">
+            <p>- Kéo xuống dưới cùng ấn chọn vào mục User rules.</p>
+            <img src="Image\User rules.jpg" alt="Ấn vào Home">
+            <p>- Ấn chọn Import rồi chọn file rules.txt vừa tải về.</p>
+            <img src="Image\Import.jpg" alt="Ấn vào Home">
+            <p>- Ấn vào logo Adguard DNS.</p>
+            <img src="Image\An logo.jpg" alt="Ấn vào Home">
+            <p>- Ấn chọn Settings.</p>
+            <img src="Image\An setting.jpg" alt="Ấn vào Home">
+            <p>- Kéo xuống dưới cùng chọn copy DNS.</p>
+            <img src="Image\copy dns.jpg" alt="Ấn vào Home">
+            <p>- Mở file Chặn thu hồi 1 lên.<br>
+               - Làm tương tự để tạo ra được 5 file chặn thu hồi chứng chỉ dạng .mobileconfig.
+               </p>
+        </div>
+    </div>
+
+    <div id="tabAndroid" class="tabcontent">
+
+        <div class="subtab">
+            <button class="subtablinks" onclick="openSubTab(event, 'subTabAndroidApp')">Ứng dụng</button>
+            <button class="subtablinks" onclick="openSubTab(event, 'subTabAndroidGame')">Game</button>
+        </div>
+        <div id="subTabAndroidApp" class="subtabcontent" style="display: none;">
+            <h3>Nội dung Sub Tab 1</h3>
+            <p>Đây là nội dung của sub tab 1 trong tab Android.</p>
+        </div>
+        <div id="subTabAndroidGame" class="subtabcontent" style="display: none;">
+            <h3>Nội dung Sub Tab 2</h3>
+            <p>Đây là nội dung của sub tab 2 trong tab Android.</p>
+        </div>
+    </div>
+    <script>
+        var previousTab = ""; // Biến lưu trạng thái tab trước đó
+        var previousSubTab = ""; // Biến lưu trạng thái subtab trước đó
+
+        document.addEventListener("DOMContentLoaded", function () {
+            openTab(null, "tabIOS");
+            changeTitle('Ứng dụng IOS');// Hiển thị tabIOS khi trang được tải lần đầu
+        });
+
+        function openTab(evt, tabName) {
+            var tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Lưu trạng thái trước đó
+            previousSubTab = "";
+            if (previousTab !== "") {
+                document.getElementById(previousTab).style.display = "none";
+            }
+
+            // Hiển thị tab mới và lưu trạng thái hiện tại
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).getElementsByClassName("subtablinks")[0].click();
+            previousTab = tabName;
+            if (evt !== null) {
+                evt.currentTarget.className += " active";
+            }
+        }
+
+        function openSubTab(evt, subTabName) {
+            var subtabcontent, subtablinks;
+            subtabcontent = document.getElementsByClassName("subtabcontent");
+            for (var i = 0; i < subtabcontent.length; i++) {
+                subtabcontent[i].style.display = "none";
+            }
+            subtablinks = document.getElementsByClassName("subtablinks");
+            for (var i = 0; i < subtablinks.length; i++) {
+                subtablinks[i].className = subtablinks[i].className.replace(" active", "");
+            }
+
+            // Lưu trạng thái trước đó
+            if (previousSubTab !== "") {
+                document.getElementById(previousSubTab).style.display = "none";
+            }
+
+            // Hiển thị subtab mới và lưu trạng thái hiện tại
+            document.getElementById(subTabName).style.display = "block";
+            previousSubTab = subTabName;
+            if (evt !== null) {
+                evt.currentTarget.className += " active";
+            }
+        }
+    </script>
+
+</body>
+</html>
